@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference){
+    :root {
+        scroll-behavior: smooth;
+    }
+}
+
+
+@font-face {
+    font-family: kamerik-3d;
+    src: url(../fonts/kamerik205-heavy.woff2);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: merri;
+    src: url(../fonts/merriweather-regular-italic.woff2);
+    font-weight: 900;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 100px;
+    padding-top: 25px;
+}
+
+.text__top{
+    margin-right: 25px;
+    font-size: 60px;
+    border-right: 2px solid white;
+    padding-right: 50px;
+}
+
+.img__top{
+    margin-right: 25px;
+    font-size: 70px;
+}
+
+.text__top__block p {
+    font-family: 'kamerik-3d';
+    margin-right: 75px;
+    font-weight: lighter;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: kamerik-3d;    
+}
+
+h1 {
+    font-size: 70px;
+    text-align: center;
+
+}
+
+.text__form {
+  font-size: 70px;
+  margin-top: 35vh;
+  text-align: center;
+}
+
+.first__block{
+    margin-right: 50px;
+    margin: 0px 100px;
+    margin-top: 10vh;
+    display: flex;
+    text-align: left; 
+}
+
+.data {
+    border-left: 1px solid white;
+    padding-left: 10px;
+    
+}
+
+.data-s {
+    border-right: 1px solid white;
+    padding-right: 10px;
+    text-align: right; 
+}
+
+.first__block p{
+    margin-bottom: 5px;
+    
+}
+
+
+.second__block{
+    margin: 0px 160px;
+    margin-left: 45vw;
+    margin-top: 10px;
+    display: flex;
+    text-align: right;
+}
+
+.second__block p{
+    margin-bottom: 5px;
+}
+
+.text__tb {
+    text-align: center;
+    font-size: 70px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.text__tb img{
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.team__block img {
+    margin-right: 50px;
+
+}
+
+.team__block {
+    margin-left: 5%;
+    
+}
+
+.team__block_1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5%;
+    
+}
+
+.text__team {
+    margin-right: 10vw;
+    font-size: 40px;
+    text-align: center;
+    
+}
+
+.button__block  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+.animated-button {
+    background-color: transparent; /* Зеленый цвет */
+    border: none;
+    font-family: kamerik-3d;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 35px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    
+  }
+  
+  .animated-button:hover {
+    background-color: #4562a0; /* Темно-зеленый цвет */
+    color: white;
+    transform: scale(1.1); /* Увеличение размера с плавной анимацией */
+    /* box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.352), 0 6px 20px 0 rgba(0,0,0,0.19); */
+  }
+
+  .animated-button__discord {
+    background-color: transparent; /* Зеленый цвет */
+    border: none;
+    font-family: kamerik-3d;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    
+  }
+  
+  .animated-button__discord:hover {
+    background-color: rgb(77, 34, 142); /* Темно-зеленый цвет */
+    color: white;
+    transform: scale(1.1); /* Увеличение размера с плавной анимацией */
+    /* box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.352), 0 6px 20px 0 rgba(0,0,0,0.19); */
+  }
+
+  .animated-button__gmail {
+    background-color: transparent; /* Зеленый цвет */
+    border: none;
+    font-family: kamerik-3d;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 35px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    
+  }
+  
+  .animated-button__gmail:hover {
+    background-color: rgb(158, 44, 44); /* Темно-зеленый цвет */
+    color: white;
+    transform: scale(1.1); /* Увеличение размера с плавной анимацией */
+    /* box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.352), 0 6px 20px 0 rgba(0,0,0,0.19); */
+  }
+  
+   .sticky-btn {
+    background-color: transparent; /* Зеленый цвет */
+    border: none;
+    font-family: kamerik-3d;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    
+  }
+  
+  .sticky-btn:hover {
+    /* Темно-зеленый цвет */
+    color: white;
+    border: 1px solid white;
+    transform: scale(1.1); /* Увеличение размера с плавной анимацией */
+    /* box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.352), 0 6px 20px 0 rgba(0,0,0,0.19); */
+  }
+
+  .left {
+    width: 90vh;
+    height: 100px;
+    border:none;
+    background-color: white;
+    color:black;
+    font-size: 50px;
+    text-align: center;
+    line-height: 90px;
+    font-family: kamerik-3d;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    
+  }
+
+  .left:hover {
+    background-color: black; /* Темно-зеленый цвет */
+    color: white;
+    transform: scale(1.1);
+     /* Увеличение размера с плавной анимацией */
+    /* box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.352), 0 6px 20px 0 rgba(0,0,0,0.19); */
+  }
+
+  .right {
+    width: 90vh;
+    height: 100px;
+    border: none;
+    background-color: black;
+    color:white;
+    text-align: center;
+    font-size: 50px;
+    line-height: 90px;
+    margin-right: 20px;
+    font-family: kamerik-3d;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-left: 10px;
+  }
+
+  .right:hover {
+    background-color: white; /* Темно-зеленый цвет */
+    color: black;
+    transform: scale(1.1); /* Увеличение размера с плавной анимацией */
+    /* box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.352), 0 6px 20px 0 rgba(0,0,0,0.19); */
+  }
+
+  .right__left {
+    display: flex;
+    padding-left: 35px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-left: 10vw;
+  }
+  
+  label {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  input {
+    width: 400px;
+    margin-bottom: 10px;
+  }
+
+  textarea {
+    width: 400px;
+    height: 300px;
+    margin-bottom: 10px;
+    margin-right: 15vw;
+    max-width: 400px;
+    max-height: 300px;
+  }
+
+  input[type="submit"] {
+    width: 100px;
+  }
+
+  .form__block {
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  .text__slog {
+    font-size: 53px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+    margin-left:100px;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+.submit {
+    font-family: kamerik-3d;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    width: 100px;
+    height: 50px;
+}
+
+.sumbit:hover {
+    background-color: white; /* Темно-зеленый цвет */
+    color: black;
+    transform: scale(1.1);
+}
+
+.head_2 {
+  display: flex;
+  flex-direction: column; 
+}
+
+.header__2 {
+    display: flex;
+    flex-direction: row;    
+}
+
+.form-btn {
+  background-color: transparent; /* Зеленый цвет */
+  border: none;
+  font-family: kamerik-3d;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-left: 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  
+}
+
+.form-btn:hover {
+  /* Темно-зеленый цвет */
+  color: white;
+  border: 1px solid white;
+  transform: scale(1.1); /* Увеличение размера с плавной анимацией */
+  /* box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.352), 0 6px 20px 0 rgba(0,0,0,0.19); */
+}
+
+.animated-button-submit {
+  background-color: transparent; /* Зеленый цвет */
+  border: none;
+  font-family: kamerik-3d;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-left: 270px;
+  padding-bottom: 5px;
+ 
+}
+
+.animated-button-submit:hover {
+  background-color: transparent; /* Темно-зеленый цвет */
+  color: white;
+  border: 1px solid white;
+  transform: scale(1.1); /* Увеличение размера с плавной анимацией */
+  /* box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.352), 0 6px 20px 0 rgba(0,0,0,0.19); */
+}
